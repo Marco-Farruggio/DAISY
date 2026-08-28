@@ -18,4 +18,20 @@ impl Device {
     pub fn input_channels(&self) -> Option<ChannelCount> {
         None
     }
+
+    pub fn output_channels(&self) -> Option<ChannelCount> {
+        None
+    }
+
+    pub fn channel_names(&self) -> Result<Vec<String>, DeviceError> {
+        todo!()
+    }
+
+    pub fn channel_name(&self, channel: u16) -> Result<String, DeviceError> {
+        todo!()
+    }
+
+    pub fn latency(&self) -> Result<u32, DeviceError> {
+        todo!()
+    }
 }
