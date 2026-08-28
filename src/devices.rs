@@ -16,6 +16,6 @@ impl Device {
     }
 
     pub fn input_channels(&self) -> Option<ChannelCount> {
-      None
+        None
     }
 }
