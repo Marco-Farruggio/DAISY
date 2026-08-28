@@ -20,7 +20,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         0..=8,
         move |inputs, outputs| {
             for (i, channel) in inputs.iter().enumerate() {
-                peaks[i] = channel.max();
+                peaks[i].set(channel.max());
             }
             for channel in outputs {
                 channel.fill(0.0);
