@@ -35,4 +35,4 @@ pub enum DataType {
 
 type SampleRate = u32;
 
-type ChannelCount = NonZeroU16
+type ChannelCount = NonZeroU16;
